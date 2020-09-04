@@ -1,12 +1,274 @@
 ﻿% This file was created with Citavi 6.4.0.35
 
-@article{.2019,
- author = {王静},
- year = {2019},
- title = {肺结节,我们该如何对待},
- pages = {20},
- volume = {000},
- number = {3},
- journal = {家庭健康：医学科普}
+@article{doi:10.1118/1.4907970,
+author = {Lopez Torres, E. and Fiorina, E. and Pennazio, F. and Peroni, C. and Saletta, M. and Camarlinghi, N. and Fantacci, M. E. and Cerello, P.},
+title = {Large scale validation of the M5L lung CAD on heterogeneous CT datasets},
+journal = {Medical Physics},
+volume = {42},
+number = {4},
+pages = {1477-1489},
+keywords = {computerised tomography, image segmentation, iterative methods, lung, medical image processing, optimisation, Computed tomography, Numerical optimization, Computerised tomographs, Biological material, e.g. blood, urine; Haemocytometers, Digital computing or data processing equipment or methods, specially adapted for specific applications, Image data processing or generation, in general, lung CT, computer aided detection (CAD), image processing, 3-D segmentation, LIDC IDRI, ANODE09, screening, Lungs, Computed tomography, Radiologists, Databases, Cancer, Data analysis, Surface structure, Computer aided diagnosis, Medical image segmentation},
+doi = {10.1118/1.4907970},
+url = {https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.4907970},
+eprint = {https://aapm.onlinelibrary.wiley.com/doi/pdf/10.1118/1.4907970},
+abstract = {Purpose: M5L, a fully automated computer-aided detection (CAD) system for the detection and segmentation of lung nodules in thoracic computed tomography (CT), is presented and validated on several image datasets. Methods: M5L is the combination of two independent subsystems, based on the Channeler Ant Model as a segmentation tool [lung channeler ant model (lungCAM)] and on the voxel-based neural approach. The lungCAM was upgraded with a scan equalization module and a new procedure to recover the nodules connected to other lung structures; its classification module, which makes use of a feed-forward neural network, is based of a small number of features (13), so as to minimize the risk of lacking generalization, which could be possible given the large difference between the size of the training and testing datasets, which contain 94 and 1019 CTs, respectively. The lungCAM (standalone) and M5L (combined) performance was extensively tested on 1043 CT scans from three independent datasets, including a detailed analysis of the full Lung Image Database Consortium/Image Database Resource Initiative database, which is not yet found in literature. Results: The lungCAM and M5L performance is consistent across the databases, with a sensitivity of about 70\% and 80\%, respectively, at eight false positive findings per scan, despite the variable annotation criteria and acquisition and reconstruction conditions. A reduced sensitivity is found for subtle nodules and ground glass opacities (GGO) structures. A comparison with other CAD systems is also presented. Conclusions: The M5L performance on a large and heterogeneous dataset is stable and satisfactory, although the development of a dedicated module for GGOs detection could further improve it, as well as an iterative optimization of the training procedure. The main aim of the present study was accomplished: M5L results do not deteriorate when increasing the dataset size, making it a candidate for supporting radiologists on large scale screenings and clinical programs.},
+year = {2015}
 }
 
+@InProceedings{10.1007/978-3-319-99247-1_17,
+author="Sun, Nannan
+and Yang, Dongbao
+and Fang, Shancheng
+and Xie, Hongtao",
+editor="Liu, Weiru
+and Giunchiglia, Fausto
+and Yang, Bo",
+title="Deep Convolutional Nets for Pulmonary Nodule Detection and Classification",
+booktitle="Knowledge Science, Engineering and Management",
+year="2018",
+publisher="Springer International Publishing",
+address="Cham",
+pages="197--208",
+abstract="In this study, a novel pulmonary nodule detection and classification system with 2D convolutional neural networks is proposed. The objective is to effectively address the challenges in lung cancer diagnosis and early treatment. The system consists of two stages: nodule detection and false positive reduction. For nodule detection, we introduce a detection framework based on Faster R-CNN, which integrates a deconvolution layer to enlarge the feature map and two region proposal networks to concatenate the useful information from the lower layer. In order to ensure high sensitivity, the conditions at this stage are simple and loose. Therefore, a boosting architecture based on 2D CNNs is designed for false positive reduction. In order to improve classification accuracy, every training model pays attention to those data that are not easy to classify. In experiments, our method is conducted on LUNA16 challenge. The sensitivity of nodule candidate detection achieves 86.42{\%}. For false positive reduction, sensitivities of 73.4{\%} and 74.4{\%} at 1/8 and 1/4 false positives per scan are obtained, respectively. It proves that our method can maintain a satisfactory sensitivity even with extremely low false positive rates.",
+isbn="978-3-319-99247-1"
+}
+
+@INPROCEEDINGS{8363630,
+  author={H. {Tang} and D. R. {Kim} and X. {Xie}},
+  booktitle={2018 IEEE 15th International Symposium on Biomedical Imaging (ISBI 2018)}, 
+  title={Automated pulmonary nodule detection using 3D deep convolutional neural networks}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={523-526},}
+
+@InProceedings{10.1007/978-3-319-24574-4_28,
+author="Ronneberger, Olaf
+and Fischer, Philipp
+and Brox, Thomas",
+editor="Navab, Nassir
+and Hornegger, Joachim
+and Wells, William M.
+and Frangi, Alejandro F.",
+title="U-Net: Convolutional Networks for Biomedical Image Segmentation",
+booktitle="Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2015",
+year="2015",
+publisher="Springer International Publishing",
+address="Cham",
+pages="234--241",
+abstract="There is large consent that successful training of deep networks requires many thousand annotated training samples. In this paper, we present a network and training strategy that relies on the strong use of data augmentation to use the available annotated samples more efficiently. The architecture consists of a contracting path to capture context and a symmetric expanding path that enables precise localization. We show that such a network can be trained end-to-end from very few images and outperforms the prior best method (a sliding-window convolutional network) on the ISBI challenge for segmentation of neuronal structures in electron microscopic stacks. Using the same network trained on transmitted light microscopy images (phase contrast and DIC) we won the ISBI cell tracking challenge 2015 in these categories by a large margin. Moreover, the network is fast. Segmentation of a 512x512 image takes less than a second on a recent GPU. The full implementation (based on Caffe) and the trained networks are available at http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net.",
+isbn="978-3-319-24574-4"
+}
+
+@INPROCEEDINGS{7785132,
+  author={F. {Milletari} and N. {Navab} and S. {Ahmadi}},
+  booktitle={2016 Fourth International Conference on 3D Vision (3DV)}, 
+  title={V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation}, 
+  year={2016},
+  volume={},
+  number={},
+  pages={565-571},}
+
+@ARTICLE{7422783,
+  author={A. A. A. {Setio} and F. {Ciompi} and G. {Litjens} and P. {Gerke} and C. {Jacobs} and S. J. {van Riel} and M. M. W. {Wille} and M. {Naqibullah} and C. I. {Sánchez} and B. {van Ginneken}},
+  journal={IEEE Transactions on Medical Imaging}, 
+  title={Pulmonary Nodule Detection in CT Images: False Positive Reduction Using Multi-View Convolutional Networks}, 
+  year={2016},
+  volume={35},
+  number={5},
+  pages={1160-1169},}
+
+@ARTICLE{7576695,
+  author={Q. {Dou} and H. {Chen} and L. {Yu} and J. {Qin} and P. {Heng}},
+  journal={IEEE Transactions on Biomedical Engineering}, 
+  title={Multilevel Contextual 3-D CNNs for False Positive Reduction in Pulmonary Nodule Detection}, 
+  year={2017},
+  volume={64},
+  number={7},
+  pages={1558-1567},}
+
+@InProceedings{10.1007/978-3-030-00934-2_88,
+author="Khosravan, Naji
+and Bagci, Ulas",
+editor="Frangi, Alejandro F.
+and Schnabel, Julia A.
+and Davatzikos, Christos
+and Alberola-L{\'o}pez, Carlos
+and Fichtinger, Gabor",
+title="S4ND: Single-Shot Single-Scale Lung Nodule Detection",
+booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2018",
+year="2018",
+publisher="Springer International Publishing",
+address="Cham",
+pages="794--802",
+abstract="The most recent lung nodule detection studies rely on computationally expensive multi-stage frameworks to detect nodules from CT scans. To address this computational challenge and provide better performance, in this paper we propose S4ND, a new deep learning based method for lung nodule detection. Our approach uses a single feed forward pass of a single network for detection. The whole detection pipeline is designed as a single 3D Convolutional Neural Network (CNN) with dense connections, trained in an end-to-end manner. S4ND does not require any further post-processing or user guidance to refine detection results. Experimentally, we compared our network with the current state-of-the-art object detection network (SSD) in computer vision as well as the state-of-the-art published method for lung nodule detection (3D DCNN). We used publicly available 888 CT scans from LUNA challenge dataset and showed that the proposed method outperforms the current literature both in terms of efficiency and accuracy by achieving an average FROC-score of 0.897. We also provide an in-depth analysis of our proposed network to shed light on the unclear paradigms of tiny object detection.",
+isbn="978-3-030-00934-2"
+}
+
+@InProceedings{He_2015_ICCV,
+author = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+title = {Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification},
+booktitle = {Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
+month = {December},
+year = {2015}
+}
+
+@article{SETIO20171,
+title = "Validation, comparison, and combination of algorithms for automatic detection of pulmonary nodules in computed tomography images: The LUNA16 challenge",
+journal = "Medical Image Analysis",
+volume = "42",
+pages = "1 - 13",
+year = "2017",
+issn = "1361-8415",
+doi = "https://doi.org/10.1016/j.media.2017.06.015",
+url = "http://www.sciencedirect.com/science/article/pii/S1361841517301020",
+author = "Arnaud Arindra Adiyoso Setio and Alberto Traverso and Thomas {de Bel} and Moira S.N. Berens and Cas van den Bogaard and Piergiorgio Cerello and Hao Chen and Qi Dou and Maria Evelina Fantacci and Bram Geurts and Robbert van der Gugten and Pheng Ann Heng and Bart Jansen and Michael M.J. {de Kaste} and Valentin Kotov and Jack Yu-Hung Lin and Jeroen T.M.C. Manders and Alexander Sóñora-Mengana and Juan Carlos García-Naranjo and Evgenia Papavasileiou and Mathias Prokop and Marco Saletta and Cornelia M Schaefer-Prokop and Ernst T. Scholten and Luuk Scholten and Miranda M. Snoeren and Ernesto Lopez Torres and Jef Vandemeulebroucke and Nicole Walasek and Guido C.A. Zuidhof and Bram van Ginneken and Colin Jacobs",
+keywords = "Pulmonary nodules, Computed tomography, Computer-aided detection, Medical image challenges, Deep learning, Convolutional networks",
+abstract = "Automatic detection of pulmonary nodules in thoracic computed tomography (CT) scans has been an active area of research for the last two decades. However, there have only been few studies that provide a comparative performance evaluation of different systems on a common database. We have therefore set up the LUNA16 challenge, an objective evaluation framework for automatic nodule detection algorithms using the largest publicly available reference database of chest CT scans, the LIDC-IDRI data set. In LUNA16, participants develop their algorithm and upload their predictions on 888 CT scans in one of the two tracks: 1) the complete nodule detection track where a complete CAD system should be developed, or 2) the false positive reduction track where a provided set of nodule candidates should be classified. This paper describes the setup of LUNA16 and presents the results of the challenge so far. Moreover, the impact of combining individual systems on the detection performance was also investigated. It was observed that the leading solutions employed convolutional networks and used the provided set of nodule candidates. The combination of these solutions achieved an excellent sensitivity of over 95% at fewer than 1.0 false positives per scan. This highlights the potential of combining algorithms to improve the detection performance. Our observer study with four expert readers has shown that the best system detects nodules that were missed by expert readers who originally annotated the LIDC-IDRI data. We released this set of additional nodules for further development of CAD systems."
+}
+
+@InProceedings{10.1007/978-3-319-66179-7_64,
+author="Ding, Jia
+and Li, Aoxue
+and Hu, Zhiqiang
+and Wang, Liwei",
+editor="Descoteaux, Maxime
+and Maier-Hein, Lena
+and Franz, Alfred
+and Jannin, Pierre
+and Collins, D. Louis
+and Duchesne, Simon",
+title="Accurate Pulmonary Nodule Detection in Computed Tomography Images Using Deep Convolutional Neural Networks",
+booktitle="Medical Image Computing and Computer Assisted Intervention − MICCAI 2017",
+year="2017",
+publisher="Springer International Publishing",
+address="Cham",
+pages="559--567",
+abstract="Early detection of pulmonary cancer is the most promising way to enhance a patient's chance for survival. Accurate pulmonary nodule detection in computed tomography (CT) images is a crucial step in diagnosing pulmonary cancer. In this paper, inspired by the successful use of deep convolutional neural networks (DCNNs) in natural image recognition, we propose a novel pulmonary nodule detection approach based on DCNNs. We first introduce a deconvolutional structure to Faster Region-based Convolutional Neural Network (Faster R-CNN) for candidate detection on axial slices. Then, a three-dimensional DCNN is presented for the subsequent false positive reduction. Experimental results of the LUng Nodule Analysis 2016 (LUNA16) Challenge demonstrate the superior detection performance of the proposed approach on nodule detection (average FROC-score of 0.893, ranking the 1st place over all submitted results), which outperforms the best result on the leaderboard of the LUNA16 Challenge (average FROC-score of 0.864).",
+isbn="978-3-319-66179-7"
+}
+
+@InProceedings{10.1007/978-3-030-32226-7_30,
+author="Tang, Hao
+and Zhang, Chupeng
+and Xie, Xiaohui",
+editor="Shen, Dinggang
+and Liu, Tianming
+and Peters, Terry M.
+and Staib, Lawrence H.
+and Essert, Caroline
+and Zhou, Sean
+and Yap, Pew-Thian
+and Khan, Ali",
+title="NoduleNet: Decoupled False Positive Reduction for Pulmonary Nodule Detection and Segmentation",
+booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2019",
+year="2019",
+publisher="Springer International Publishing",
+address="Cham",
+pages="266--274",
+abstract="Pulmonary nodule detection, false positive reduction and segmentation represent three of the most common tasks in the computer aided analysis of chest CT images. Methods have been proposed for each task with deep learning based methods heavily favored recently. However training deep learning models to solve each task separately may be sub-optimal - resource intensive and without the benefit of feature sharing. Here, we propose a new end-to-end 3D deep convolutional neural net (DCNN), called NoduleNet, to solve nodule detection, false positive reduction and nodule segmentation jointly in a multi-task fashion. To avoid friction between different tasks and encourage feature diversification, we incorporate two major design tricks: (1) decoupled feature maps for nodule detection and false positive reduction, and (2) a segmentation refinement subnet for increasing the precision of nodule segmentation. Extensive experiments on the large-scale LIDC dataset demonstrate that the multi-task training is highly beneficial, improving the nodule detection accuracy by 10.27{\%}, compared to the baseline model trained to only solve the nodule detection task. We also carry out systematic ablation studies to highlight contributions from each of the added components. Code is available at https://github.com/uci-cbcl/NoduleNet.",
+isbn="978-3-030-32226-7"
+}
+
+@incollection{NIPS2015_5638,
+title = {Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks},
+author = {Ren, Shaoqing and He, Kaiming and Girshick, Ross and Sun, Jian},
+booktitle = {Advances in Neural Information Processing Systems 28},
+editor = {C. Cortes and N. D. Lawrence and D. D. Lee and M. Sugiyama and R. Garnett},
+pages = {91--99},
+year = {2015},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/5638-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks.pdf}
+}
+
+@INPROCEEDINGS{8759244,
+  author={H. {Tang} and X. {Liu} and X. {Xie}},
+  booktitle={2019 IEEE 16th International Symposium on Biomedical Imaging (ISBI 2019)}, 
+  title={An End-to-End Framework for Integrated Pulmonary Nodule Detection and False Positive Reduction}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={859-862},
+  abstract={Pulmonary nodule detection using low-dose Computed Tomography (CT) is often the first step in lung disease screening and diagnosis. Recently, algorithms based on deep convolutional neural nets have shown great promise for automated nodule detection. Most of the existing deep learning nodule detection systems are constructed in two steps: a) nodule candidates screening and b) false positive reduction, using two different models trained separately. Although it is commonly adopted, the two-step approach not only imposes significant resource overhead on training two independent deep learning models, but also is sub-optimal because it prevents crosstalk between the two. In this work, we present an end-to-end framework for nodule detection, integrating nodule candidate screening and false positive reduction into one model, trained jointly. We demonstrate that the end-to-end system improves the performance by 3.88% over the two-step approach, while at the same time reducing model complexity by one third and cutting inference time by 3.6 fold. Code will be made publicly available.},
+  keywords={computerised tomography;convolutional neural nets;diseases;learning (artificial intelligence);lung;medical image processing;integrated pulmonary nodule detection;lung disease screening;deep convolutional neural nets;automated nodule detection;independent deep learning models;lung disease diagnosis;deep learning nodule detection systems;low-dose computed tomography;Three-dimensional displays;Computed tomography;Feature extraction;Proposals;Training;Deep learning;Neural networks;Pulmonary Nodule;Deep Learning;Computed Tomography},
+  doi={10.1109/ISBI.2019.8759244},
+  ISSN={1945-8452},
+  month={April},}
+
+@article{1612.08012,
+Author = {Arnaud Arindra Adiyoso Setio and Alberto Traverso and Thomas de Bel and Moira S. N. Berens and Cas van den Bogaard and Piergiorgio Cerello and Hao Chen and Qi Dou and Maria Evelina Fantacci and Bram Geurts and Robbert van der Gugten and Pheng Ann Heng and Bart Jansen and Michael M. J. de Kaste and Valentin Kotov and Jack Yu-Hung Lin and Jeroen T. M. C. Manders and Alexander Sónora-Mengana and Juan Carlos García-Naranjo and Evgenia Papavasileiou and Mathias Prokop and Marco Saletta and Cornelia M Schaefer-Prokop and Ernst T. Scholten and Luuk Scholten and Miranda M. Snoeren and Ernesto Lopez Torres and Jef Vandemeulebroucke and Nicole Walasek and Guido C. A. Zuidhof and Bram van Ginneken and Colin Jacobs},
+Title = {Validation, comparison, and combination of algorithms for automatic detection of pulmonary nodules in computed tomography images: the LUNA16 challenge},
+Year = {2016},
+Eprint = {arXiv:1612.08012},
+Doi = {10.1016/j.media.2017.06.015},
+}
+
+@misc{1606.04797,
+Author = {Fausto Milletari and Nassir Navab and Seyed-Ahmad Ahmadi},
+Title = {V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation},
+Year = {2016},
+Eprint = {arXiv:1606.04797},
+}
+
+@incollection{NIPS2013_5207,
+title = {Deep Neural Networks for Object Detection},
+author = {Szegedy, Christian and Toshev, Alexander and Erhan, Dumitru},
+booktitle = {Advances in Neural Information Processing Systems 26},
+editor = {C. J. C. Burges and L. Bottou and M. Welling and Z. Ghahramani and K. Q. Weinberger},
+pages = {2553--2561},
+year = {2013},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/5207-deep-neural-networks-for-object-detection.pdf}
+}
+
+@article{doi:10.1118/1.1387272,
+author = {Armato III, Samuel G. and Giger, Maryellen L. and MacMahon, Heber},
+title = {Automated detection of lung nodules in CT scans: Preliminary results},
+journal = {Medical Physics},
+volume = {28},
+number = {8},
+pages = {1552-1561},
+keywords = {computer-aided diagnosis (CAD), lung cancer, lung nodules, computed tomography, image processing, Computed radiography, Image analysis, Diseases, lung, image segmentation, computerised tomography, medical image processing, cancer, Lungs, Computed tomography, Databases, Image analysis, Data analysis, Medical imaging, Physicists},
+doi = {10.1118/1.1387272},
+url = {https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.1387272},
+eprint = {https://aapm.onlinelibrary.wiley.com/doi/pdf/10.1118/1.1387272},
+abstract = {We have developed a fully automated computerized method for the detection of lung nodules in helical computed tomography (CT) scans of the thorax. This method is based on two-dimensional and three-dimensional analyses of the image data acquired during diagnostic CT scans. Lung segmentation proceeds on a section-by-section basis to construct a segmented lung volume within which further analysis is performed. Multiple gray-level thresholds are applied to the segmented lung volume to create a series of thresholded lung volumes. An 18-point connectivity scheme is used to identify contiguous three-dimensional structures within each thresholded lung volume, and those structures that satisfy a volume criterion are selected as initial lung nodule candidates. Morphological and gray-level features are computed for each nodule candidate. After a rule-based approach is applied to greatly reduce the number of nodule candidates that corresponds to non-nodules, the features of remaining candidates are merged through linear discriminant analysis. The automated method was applied to a database of 43 diagnostic thoracic CT scans. Receiver operating characteristic (ROC) analysis was used to evaluate the ability of the classifier to differentiate nodule candidates that correspond to actual nodules from false-positive candidates. The area under the ROC curve for this categorization task attained a value of 0.90 during leave-one-out-by-case evaluation. The automated method yielded an overall nodule detection sensitivity of 70\% with an average of 1.5 false-positive detections per section when applied to the complete 43-case database. A corresponding nodule detection sensitivity of 89\% with an average of 1.3 false-positive detections per section was achieved with a subset of 20 cases that contained only one or two nodules per case.},
+year = {2001}
+}
+
+@ARTICLE{8642524,
+  author={F. {Liao} and M. {Liang} and Z. {Li} and X. {Hu} and S. {Song}},
+  journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+  title={Evaluate the Malignancy of Pulmonary Nodules Using the 3-D Deep Leaky Noisy-OR Network}, 
+  year={2019},
+  volume={30},
+  number={11},
+  pages={3484-3495},}
+  
+ @misc{1505.04597,
+Author = {Olaf Ronneberger and Philipp Fischer and Thomas Brox},
+Title = {U-Net: Convolutional Networks for Biomedical Image Segmentation},
+Year = {2015},
+Eprint = {arXiv:1505.04597},
+}
+
+@misc{1409.1556,
+Author = {Karen Simonyan and Andrew Zisserman},
+Title = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
+Year = {2014},
+Eprint = {arXiv:1409.1556},
+}
+
+@misc{1512.03385,
+Author = {Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
+Title = {Deep Residual Learning for Image Recognition},
+Year = {2015},
+Eprint = {arXiv:1512.03385},
+}
+
+@misc{1502.01852,
+Author = {Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
+Title = {Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification},
+Year = {2015},
+Eprint = {arXiv:1502.01852},
+}
